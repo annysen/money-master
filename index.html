@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome  -->
+    <script
+      src="https://kit.fontawesome.com/9eb8c80ef6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="mt-5 text-center font-bold text-sky-600 text-5xl">
+      Money Master <i class="fa-solid fa-sack-dollar"></i>
+    </h1>
+    <main class="w-75 mt-3 mx-auto">
+      <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+        <div class="flex justify-center items-center">
+          <img src="undraw_Transfer_money_re_6o1h.png" alt="" srcset="" />
+        </div>
+        <div>
+          <div class="text-center">
+            <div class="mt-5">
+              <h1 class="text-2xl font-bold">Income</h1>
+              <input
+                id="income-inputField"
+                class="mt-3 px-5 rounded-lg py-2 border border-black"
+                type="text"
+                placeholder="Your Income"
+              />
+            </div>
+            <div class="mt-5">
+              <h1 class="text-2xl font-bold">Expenses</h1>
+              <input
+                id="food-expense"
+                class="mt-3 rounded-lg px-5 py-2 border border-black block mx-auto"
+                type="text"
+                placeholder="Food"
+              />
+              <input
+                id="house-rent"
+                class="mt-3 rounded-lg px-5 py-2 border border-black block mx-auto"
+                type="text"
+                placeholder="House Rent"
+              />
+              <input
+                id="cloth-expense"
+                class="mt-3 rounded-lg px-5 py-2 border border-black block mx-auto"
+                type="text"
+                placeholder="Cloth"
+              />
+              <button
+                id="calculate-total-expense"
+                class="mt-5 border rounded-lg text-white bg-sky-800 px-5 py-2 hover:bg-sky-600"
+              >
+                Calculate
+              </button>
+            </div>
+            <h1 class="text-2xl font-bold mt-5">
+              Total Expense: <span id="total-expense"></span>
+            </h1>
+            <h1 class="text-2xl font-bold mt-5">
+              Remaing Balance: <span id="remaining-balance"></span>
+            </h1>
+          </div>
+          <div class="flex justify-center items-center gap-3 mt-5">
+            <h1 class="text-xl font-semibold">Save:</h1>
+            <input
+              id="save-parsent"
+              class="w-20 rounded-lg px-5 py-2 border border-black"
+              type="text"
+              placeholder="%"
+            />
+            <button
+              id="save-btn"
+              class="border rounded-lg text-white bg-sky-800 px-5 py-2 hover:bg-sky-600"
+            >
+              Save
+            </button>
+          </div>
+          <div class="text-center">
+            <h1 class="text-xl font-semibold mt-5">
+              Saving Amount: <span id="save-amount"></span>
+            </h1>
+            <h1 class="text-xl font-semibold mt-5">
+              Remaing Balance: <span id="total-after-saving"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- js  -->
+    <script src="index.js"></script>
+  </body>
+</html>
